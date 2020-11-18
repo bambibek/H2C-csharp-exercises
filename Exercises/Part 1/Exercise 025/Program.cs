@@ -6,7 +6,12 @@ namespace exercise_25
   {
     public static void Main(string[] args)
     {
-      // Write your code here:
+            Console.WriteLine("give an number:");
+            int year = Convert.ToInt32(Console.ReadLine());
+            if(year == 1984)
+            {
+                Console.WriteLine("Orwell");
+            }
 
     }
   }
