@@ -6,7 +6,7 @@ namespace exercise_39
   {
     public static void Main(string[] args)
     {
-            int count = 0;
+            int sum = 0;
             while (true)
             {
                 Console.WriteLine("Give a number: ");
@@ -18,11 +18,11 @@ namespace exercise_39
                 }
                 else
                 {
-                    count = count + numInput;
+                    sum = sum + numInput;
 
                 }
             }
-            Console.WriteLine("Total sum of numbers: " + count);
+            Console.WriteLine("Total sum of numbers: " + sum);
     }
   }
 }
