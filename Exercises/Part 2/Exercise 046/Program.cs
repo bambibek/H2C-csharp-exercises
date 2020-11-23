@@ -6,8 +6,14 @@ namespace exercise_46
   {
     public static void Main(string[] args)
     {
+            Console.WriteLine("Give a number below 100: ");
+            int userInput = Convert.ToInt32(Console.ReadLine());
 
-      // Write your code here:
+            while (userInput <= 100)
+            {
+                Console.WriteLine(userInput);
+                userInput = userInput + 1;
+            }
 
     }
   }
