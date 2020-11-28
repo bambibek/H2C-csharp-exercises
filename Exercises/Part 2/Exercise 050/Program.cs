@@ -9,20 +9,20 @@ namespace exercise_50
 
             Console.WriteLine(" print how many times?");
             int inputUser = Convert.ToInt32(Console.ReadLine());
-            int count = 0;
-            // Call your method here:
-            while(count < inputUser)
-            {
-                PrintPhrase();
-                count = count + 1;
-            }
+
+            PrintPhrase(inputUser);
+            
             
         }
 
     // Write your method here:
-    public static void PrintPhrase()
+    public static void PrintPhrase(int times)
     {
-            Console.WriteLine("In a hole in the ground there lived a method");
+            for(int count=0; count<times; count++)
+            {
+                Console.WriteLine("In a hole in the ground there lived a method.");
+            }
+            
     }
   }
 }
