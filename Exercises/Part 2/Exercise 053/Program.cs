@@ -6,12 +6,17 @@ namespace exercise_53
   {
     public static void Main(String[] args)
     {
-      // Call your method here:
-
+            
+            int num1 = 23;
+            int num2 = 4;
+            Division(num1, num2);
 
     }
-
-    // Write your method here:
+    public static void Division(int num, int den)
+    {
+            double div = Convert.ToDouble(num)/den;
+            Console.WriteLine(div);
+    }
 
   }
 }
