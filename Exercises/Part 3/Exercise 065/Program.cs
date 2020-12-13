@@ -30,7 +30,7 @@ namespace exercise_65
                  input = Console.ReadLine();
             }
 
-            Console.WriteLine(count);
+            Console.WriteLine("In total :" + count);
     }
   }
 }
