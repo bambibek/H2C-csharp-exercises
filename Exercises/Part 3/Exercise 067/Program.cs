@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace exercise_67
 {
@@ -17,7 +18,9 @@ namespace exercise_67
         }
         list.Add(input);
       }
-
+            var lastValue = list.LastOrDefault();
+            Console.WriteLine(list[0]);
+            Console.WriteLine(lastValue);
     }
   }
 }
