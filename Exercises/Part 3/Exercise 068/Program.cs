@@ -17,7 +17,11 @@ namespace exercise_68
         }
         list.Add(input);
       }
-
+      //printing all teh elements in teh list
+          foreach(int value in list)
+            {
+                Console.WriteLine(value);
+            }
     }
   }
 }
