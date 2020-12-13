@@ -23,7 +23,7 @@ namespace exercise_63
                  list.Add(input);
 
              }*/
-
+            
             //2nd way
             int input = Convert.ToInt32(Console.ReadLine());
            while(input!=0)
