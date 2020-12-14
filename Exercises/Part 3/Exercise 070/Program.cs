@@ -8,15 +8,28 @@ namespace exercise_70
     public static void Main(string[] args)
     {
       List<int> list = new List<int>();
-      while (true)
+
+      int input = Convert.ToInt32(Console.ReadLine());
+
+       while (input != -1)
       {
-        int input = Convert.ToInt32(Console.ReadLine());
-        if (input == -1)
-        {
-          break;
-        }
+        
         list.Add(input);
-      }
+        input = Convert.ToInt32(Console.ReadLine());
+
+       }
+            // int temp = input;
+            int greatest = 0;
+            foreach (int value in list)
+            {
+                if (greatest <= value)
+                {
+                    greatest = value;
+                }
+
+            }
+                Console.WriteLine("The greatest number is: " + greatest);
+
     }
   }
 }
