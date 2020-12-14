@@ -25,7 +25,7 @@ namespace exercise_69
 
             foreach (int value in list)
             {
-                if(value>=begin && value <= end)
+                if(value>begin && value < end)
                 {
                     Console.WriteLine(value);
                 }
