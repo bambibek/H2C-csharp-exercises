@@ -18,12 +18,24 @@ namespace exercise_79
       array[6] = 9;
       array[7] = 7;
 
+      bool found = false;
+
       Console.WriteLine("Search for?");
       int searching = Convert.ToInt32(Console.ReadLine());
 
       // Implement the search functionality here
-
-    }
+      for(int i = 0; i<array.Length; i++)
+            {
+                if (searching == array[i])
+                {
+                    found = true;
+                    Console.WriteLine(searching + " is at index " + i);
+                }
+                
+            }
+        if(!found)
+                Console.WriteLine(searching + " not found!");
+        }
 
   }
 }
