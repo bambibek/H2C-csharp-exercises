@@ -12,10 +12,15 @@ namespace exercise_80
       Console.WriteLine(sum);
 
     }
-
-    public static int SumOfNumbersInArray(int[] numbers) {
-
-      return 0;
+    
+    public static int SumOfNumbersInArray(int[] numbers)
+    {
+            int arraySum = 0;
+            for(int i =0; i< numbers.Length; i++)
+            {
+                arraySum += numbers[i];
+            }
+      return arraySum;
     }
 
   }
