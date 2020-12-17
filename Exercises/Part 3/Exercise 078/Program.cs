@@ -23,13 +23,19 @@ namespace exercise_78
       }
       Console.WriteLine("");
 
-      // Implement here
-      // asking for the two indices
-      // and then swapping them
+            // asking for the two indices
+            Console.WriteLine(" give 1st index: ");
+            int first = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine(" give 2nd index: ");
+            int second = Convert.ToInt32(Console.ReadLine());
+
+            int temp = array[first];
+            array[first] = array[second];
+            array[second] = temp;
 
 
-      // DO NOT CHANGE THE FOLLOWING CODE!
-      Console.WriteLine("");
+            // DO NOT CHANGE THE FOLLOWING CODE!
+            Console.WriteLine("");
       index = 0;
       while (index < array.Length)
       {
